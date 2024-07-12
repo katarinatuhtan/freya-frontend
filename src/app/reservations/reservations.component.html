@@ -1,0 +1,56 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+<link rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">
+
+<div class="container">
+  <div class="form-container">
+    <form [formGroup]="reservationForm" (submit)="onSubmit()">
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="firstName">Ime</label>
+          <input type="text" class="form-control" id="firstName" placeholder="Unesite ime" formControlName="firstName">
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="lastName">Prezime</label>
+          <input type="text" class="form-control" id="lastName" placeholder="Unesite prezime" formControlName="lastName">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="col-md-6 mb-3">
+          <label for="treatment">Tretman</label>
+          <select id="treatment" class="form-control" formControlName="treatment">
+            <option selected disabled>Odaberite tretman</option>
+            <option>Nadogradnja</option>
+            <option>Korekcija</option>
+            <option>Trajni lak</option>
+            <option>Skidanje gel</option>
+            <option>Skidanje trajni lak</option>
+          </select>
+        </div>
+        <div class="col-md-6 mb-3">
+          <label for="design">Dizajn</label>
+          <select id="design" class="form-control" formControlName="design">
+            <option selected disabled>Odaberite dizajn</option>
+            <option>Babyboom/French</option>
+            <option>Nail art</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="div">
+        <label for="dateTime">Odaberite datum i vrijeme</label>
+      </div>
+      <p-calendar [dateFormat]="'dd.mm.yy'" [readonlyInput]="false" [iconDisplay]="'input'"
+        [showIcon]="true" [showTime]="true" formControlName="dateTime"></p-calendar>
+
+      <div class="mb-3">
+        <label for="exampleFormControlTextarea1" class="form-label" >Dodatne napomene</label>
+        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" formControlName="comment"></textarea>
+      </div>
+      <button class=" btn" type="submit" id="button">Zakaži termin</button>
+    </form>
+  </div>
+</div>
+
+
+<p-toast position="bottom-right" />

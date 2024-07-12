@@ -1,1 +1,271 @@
-/* You can add global styles to this file, and also import other style files */
+h1 {
+  font-size: 70px;
+  margin-top: 50px;
+  font-style: oblique;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #f7e7f4;
+  text-align: left;
+}
+
+h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #a51d8e70;
+  text-align: justify;
+  text-align: center;
+}
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  text-align: left;
+  color: #e9e0e7;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: large;
+}
+
+#back {
+  background-image: url("assets/background.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 100vh; /* Set height to 100% of the viewport height */
+  width: 100vw; /* Ensure it covers the full width of the viewport */
+  margin: 0; /* Remove any default margin */
+  padding: 0; /* Remove any default padding */
+  overflow: hidden; /* Prevent any overflow */
+}
+
+
+#naslov {
+  margin-bottom: 5%;
+}
+
+#pozadina {
+  background-image: linear-gradient(white, #f7e7f4);
+}
+
+div {
+  text-align: justify;
+  align-items: center;
+}
+
+video {
+  width: 90%;
+  height: auto;
+  margin: auto;
+}
+
+.navbar {
+  background-color: #f7e7f4;
+  overflow: visible;
+}
+
+.navbar a {
+  float: left;
+  display: block;
+  color: #000000;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.navbar a:hover {
+  background-color: #a51d8e70;
+  color: black;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.column {
+  flex: 30%;
+  max-width: 30%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  margin-left: 150px;
+  vertical-align: middle;
+  width: 100%;
+  border-radius: 25px;
+  border: 3px solid #800080;
+}
+
+#info {
+  background: #f7e7f4;
+}
+
+#galerija {
+  text-align: center;
+  margin-bottom: 20px;
+  margin-top: 15px;
+}
+
+#gal_sl {
+  margin-right: 250px;
+  margin-bottom: 20px;
+}
+
+#sl {
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+#map {
+  margin-bottom: 20px;
+  border: 3px solid #800080;
+  width: 100%;
+  height: 400px;
+}
+
+@media (max-width: 768px) {
+  #map {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+
+  .column,
+  #back {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+
+  .column,
+  #back {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
+
+.gmap_canvas {
+  overflow: hidden;
+  height: 250px;
+  width: 350px;
+}
+
+.mapouter {
+  position: relative;
+  text-align: right;
+  height: 250px;
+  width: 350px;
+}
+
+#tablica {
+  margin-bottom: 50px;
+  margin-top: 10px;
+  border: 3px solid #800080;
+  border-collapse: collapse;
+  background-color: #f7e7f4;
+}
+
+#lak {
+  margin-top: 15px;
+  margin-bottom: 20px;
+  border-radius: 70px;
+}
+
+#naslov2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+#ponuda {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+#nok {
+  margin-bottom: 30px;
+  margin-right: 250px;
+}
+
+#opis {
+  margin-left: 70px;
+}
+
+#kon {
+  margin-bottom: 50px;
+  margin-top: 25px;
+}
+
+#tekst {
+  margin-bottom: 50px;
+}
+
+.btn {
+  margin-top: 80px;
+  margin-left: 40px;
+  margin-bottom: 10px;
+  background-color: #f7e7f4;
+  color: #000000;
+  padding: 30px 64px;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  border-radius: 12px;
+  outline: solid 3px #271927;
+}
+
+.btn:hover {
+  background-color: #f7e7f4;
+  color: black;
+}
+
+btn:visited {
+  background-color: #f7e7f4;
+}
+
+#hamburger {
+  width: 45px;
+  height: 5px;
+  background-color: #800080;
+  margin: 6px 0;
+}
+
+.carousel-inner {
+  margin-left: 50px;
+  height: 400px;
+  width: 300px;
+}
+
+#car {
+  border-radius: 25px;
+  border: 3px solid #800080;
+  height: 400px;
+}
+
+.form-container {
+  margin-top: 50px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  margin-bottom: 50px;
+}
+
+label {
+  font-weight: bold;
+}
+#button{
+  background-color: #f7e7f4;
+  color: #000000;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 12px;
+  outline: solid 3px #271927;
+}
