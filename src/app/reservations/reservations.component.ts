@@ -32,9 +32,9 @@ export class ReservationsComponent {
   onSubmit():void{
     this.reservationService.createNewReservation(this.reservationForm.value).subscribe((response) => {
       console.log(response);
-      this.messageService.add({ severity: 'success', summary: 'Success!', detail: 'SAKA TI ČAS!' });
+      this.messageService.add({ severity: 'success', summary: 'Success!', detail: 'Your reservation has been sent.' });
     }, (error) => {
-      this.messageService.add({ severity: 'error', summary: 'Errorčina!', detail: 'SAKA TI ČAS!' });    
+      this.messageService.add({ severity: 'error', summary: 'Error!', detail: 'An error occurred, please try again later.' });    
     })
   }
 
